@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient2"
+    tools:context=".MainActivity2">
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/logo"
+            android:layout_width="100dp"
+            android:layout_height="124dp"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="80dp"
+            android:src="@drawable/img_4"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/acesse_sua_"
+            android:layout_width="328dp"
+            android:layout_height="14dp"
+            android:layout_marginTop="62dp"
+            android:fontFamily="@font/roboto_bold"
+            android:gravity="top"
+            android:text="@string/acesse_sua_"
+            android:textSize="12sp"
+            android:textColor="@color/bgTextField"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/logo" />
+
+        <EditText
+            android:id="@+id/Email"
+            android:layout_width="328dp"
+            android:layout_height="46dp"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/drawablerectangle"
+            android:backgroundTint="@color/acesse"
+            android:fontFamily="@font/roboto"
+            android:hint="@string/Email"
+            android:inputType="textEmailAddress"
+            android:paddingStart="8dp"
+            android:textColor="@color/bgTextField"
+            android:textColorHint="@color/bgTextField"
+            android:textSize="12sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/acesse_sua_" />
+
+        <EditText
+            android:id="@+id/Senha"
+            android:layout_width="328dp"
+            android:layout_height="46dp"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/drawablerectangle"
+            android:backgroundTint="@color/acesse"
+            android:fontFamily="@font/roboto"
+            android:hint="@string/Senha"
+            android:inputType="textEmailAddress"
+            android:paddingStart="8dp"
+            android:textColor="@color/bgTextField"
+            android:textColorHint="@color/bgTextField"
+            android:textSize="12sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/Email" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/esqu"
+            android:layout_width="328dp"
+            android:layout_height="14dp"
+            android:layout_marginTop="8dp"
+            android:fontFamily="@font/roboto"
+            android:lineHeight="14sp"
+            android:text="@string/esqu"
+            android:textAlignment="textEnd"
+            android:textColor="@color/bgTextField"
+            android:textSize="12sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/Senha" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/button"
+            android:layout_width="328dp"
+            android:layout_height="46dp"
+            android:layout_marginTop="16dp"
+            android:backgroundTint="@color/buttonColor"
+            android:fontFamily="@font/roboto_bold"
+            android:lineHeight="14sp"
+            android:text="@string/Acessar"
+            android:textColor="@color/acesse"
+            android:textSize="12sp"
+            app:cornerRadius="8dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/esqu" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/button2"
+            android:layout_width="328dp"
+            android:layout_height="46dp"
+            android:layout_marginTop="16dp"
+            android:backgroundTint="@color/acesse"
+            android:fontFamily="@font/roboto_bold"
+            android:lineHeight="14sp"
+            android:text="@string/second"
+            android:textColor="@color/bgTextField"
+            android:textSize="12sp"
+            app:cornerRadius="8dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/button"
+            app:strokeColor="@color/buttonColor"
+            app:strokeWidth="2dp" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/ou"
+            android:layout_width="328dp"
+            android:layout_height="14dp"
+            android:layout_marginTop="72dp"
+            android:fontFamily="@font/roboto"
+            android:gravity="center_horizontal|top"
+            android:lineHeight="14sp"
+            android:text="@string/ou"
+            android:textColor="@color/bgTextField"
+            android:textSize="12sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/button2" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/button3"
+            android:layout_width="328dp"
+            android:layout_height="46dp"
+            android:backgroundTint="@color/buttonText"
+            android:lineHeight="14sp"
+            app:cornerRadius="8dp"
+            android:layout_marginTop="8dp"
+            android:text="@string/google"
+            android:textColor="@color/acesse"
+            android:fontFamily="@font/roboto_bold"
+            android:textSize="12sp"
+            app:icon="@drawable/img_1"
+            app:iconTintMode="multiply"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/ou" />
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/button4"
+            android:layout_width="328dp"
+            android:layout_height="46dp"
+            android:backgroundTint="@color/buttonText"
+            android:lineHeight="14sp"
+            app:cornerRadius="4dp"
+            android:layout_marginTop="8dp"
+            android:text="@string/apple"
+            android:textColor="@color/acesse"
+            android:fontFamily="@font/roboto_bold"
+            android:textSize="12sp"
+            app:icon="@drawable/img_2"
+            app:iconTintMode="multiply"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/button3" />
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/button5"
+            android:layout_width="328dp"
+            android:layout_height="46dp"
+            android:backgroundTint="@color/buttonText"
+            android:lineHeight="14sp"
+            app:cornerRadius="8dp"
+            android:layout_marginTop="4dp"
+            android:text="@string/facebook"
+            android:textColor="@color/acesse"
+            android:fontFamily="@font/roboto_bold"
+            android:textSize="12sp"
+            app:icon="@drawable/img_3"
+           app:iconTintMode="multiply"
+            android:layout_marginBottom="8dp"
+           app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/button4" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

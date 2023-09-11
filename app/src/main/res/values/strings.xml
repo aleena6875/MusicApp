@@ -1,0 +1,22 @@
+<resources>
+    <string name="app_name">MusicApp</string>
+    <string name="acesse_sua_">
+Acesse sua conta
+</string>
+    <string name="Email">E-mail</string>
+    <string name="Senha">Senha</string>
+    <string name="Acessar">Acessar</string>
+    <string name="second">Nao tem uma conta? Crie agor</string>
+    <string name="esqu"> <u>Esqueci minha senha</u></string>
+    <string name="ou">ou</string>
+    <string name="google">Acesse com o Gmail</string>
+    <string name="apple">Acesse com o Apple ID</string>
+    <string name="facebook">Acesse com o Facebook</string>
+    <string name="Home">Home</string>
+    <string name="Music">Music</string>
+    <string name="Search">Search</string>
+    <string name="Podcasts">Podcasts</string>
+    <string name="title">Good Afternoon</string>
+    <string name="music">Music</string>
+    <string name="podcasts_shows"><![CDATA[Podcasts & Shows]]></string>
+</resources>
