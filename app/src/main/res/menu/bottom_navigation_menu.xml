@@ -11,12 +11,12 @@
         android:title="@string/Search"/>
 
     <item
-        android:id="@+id/item4"
+        android:id="@+id/item3"
         android:enabled="true"
         android:icon="@drawable/library_music"
         android:title="@string/Music" />
     <item
-        android:id="@+id/item3"
+        android:id="@+id/item4"
         android:enabled="true"
         android:icon="@drawable/pod1"
         android:title="@string/Podcasts"/>
