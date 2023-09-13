@@ -1,5 +1,4 @@
-<androidx.coordinatorlayout.widget.CoordinatorLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
@@ -11,20 +10,19 @@
     <androidx.core.widget.NestedScrollView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        app:layout_behavior="@string/searchbar_scrolling_view_behavior">
-
-    </androidx.core.widget.NestedScrollView>
+        app:layout_behavior="@string/searchbar_scrolling_view_behavior"/>
 
     <com.google.android.material.appbar.AppBarLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
+
         <com.google.android.material.search.SearchBar
             android:id="@+id/search_bar"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="Search your library"
             android:textColor="@color/acesse"
-            android:textColorHint="@color/acesse"/>
+            android:textColorHint="@color/acesse" />
     </com.google.android.material.appbar.AppBarLayout>
 
     <com.google.android.material.search.SearchView
@@ -33,76 +31,110 @@
         android:hint="Search"
         android:textColor="@color/acesse"
         android:textColorHint="@color/acesse"
-        app:layout_anchor="@id/search_bar">
-    </com.google.android.material.search.SearchView>
+        app:layout_anchor="@id/search_bar"/>
+
     <com.google.android.material.textview.MaterialTextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Top Suggestions"
-        android:fontFamily="@font/roboto_bold"
+        android:layout_marginStart="32dp"
         android:layout_marginTop="80dp"
-        android:layout_marginStart="32dp"/>
+        android:fontFamily="@font/roboto_bold"
+        android:text="Top Suggestions" />
+
     <com.google.android.material.chip.ChipGroup
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="32dp"
         android:layout_marginTop="96dp">
-    <com.google.android.material.chip.Chip
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        style="@style/Widget.Material3.Chip.Suggestion"
-        app:chipIcon="@drawable/img_9"
-        app:chipIconVisible="true"
-        app:chipIconSize="18dp"
-        android:text="1(Remastered)" />
 
         <com.google.android.material.chip.Chip
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
             style="@style/Widget.Material3.Chip.Suggestion"
-            app:chipIcon="@drawable/img_11"
-            app:chipIconVisible="true"
-            app:chipIconSize="18dp"
-            android:text="Lana Del Rey"/>
-        <com.google.android.material.chip.Chip
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-          style="@style/Widget.Material3.Chip.Suggestion.Elevated"
-            app:chipIcon="@drawable/img_12"
-            app:chipIconVisible="true"
+            android:text="1(Remastered)"
+            app:chipIcon="@drawable/img_9"
             app:chipIconSize="18dp"
-            android:text="Marvin Gaye"/>
-    </com.google.android.material.chip.ChipGroup>
-    <com.google.android.material.slider.Slider
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:valueFrom="0.0"
-        android:valueTo="100.0"
-       app:tickColorActive="#3FE36E"
-        android:contextClickable="true"
-        android:layout_marginTop="240dp"/>
-    <com.google.android.material.slider.Slider
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:valueFrom="0.0"
-        android:valueTo="100.0"
-        android:stepSize="10.0"
-        android:layout_marginTop="280dp"/>
-    <com.google.android.material.slider.RangeSlider
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:valueFrom="0.0"
-        android:valueTo="100.0"
-        app:values="@array/initial_slider_values"
-        android:layout_marginTop="320dp"/>
-    <com.google.android.material.slider.RangeSlider
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:valueFrom="0.0"
-        android:valueTo="100.0"
-        android:stepSize="10.0"
-        app:values="@array/initial_slider_values"
-        android:layout_marginTop="360dp"/>
+            app:chipIconVisible="true" />
 
-   
+        <com.google.android.material.chip.Chip
+            style="@style/Widget.Material3.Chip.Suggestion"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Lana Del Rey"
+            app:chipIcon="@drawable/img_11"
+            app:chipIconSize="18dp"
+            app:chipIconVisible="true" />
+
+        <com.google.android.material.chip.Chip
+            style="@style/Widget.Material3.Chip.Suggestion.Elevated"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Marvin Gaye"
+            app:chipIcon="@drawable/img_12"
+            app:chipIconSize="18dp"
+            app:chipIconVisible="true" />
+    </com.google.android.material.chip.ChipGroup>
+
+    <com.google.android.material.slider.Slider
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="240dp"
+        android:contextClickable="true"
+        android:valueFrom="0.0"
+        android:valueTo="100.0"
+        app:tickColorActive="#3FE36E" />
+
+    <com.google.android.material.slider.Slider
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="280dp"
+        android:stepSize="10.0"
+        android:valueFrom="0.0"
+        android:valueTo="100.0" />
+
+    <com.google.android.material.slider.RangeSlider
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="320dp"
+        android:valueFrom="0.0"
+        android:valueTo="100.0"
+        app:values="@array/initial_slider_values" />
+
+    <com.google.android.material.slider.RangeSlider
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="360dp"
+        android:stepSize="10.0"
+        android:valueFrom="0.0"
+        android:valueTo="100.0"
+        app:values="@array/initial_slider_values" />
+    <com.google.android.material.switchmaterial.SwitchMaterial
+        android:id="@+id/sm1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="400dp"
+        android:text="History"
+        android:textSize="18sp"
+        app:trackTint="@color/blue"
+        android:checked="true"/>
+    <com.google.android.material.switchmaterial.SwitchMaterial
+        android:id="@+id/sm2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="440dp"
+        android:text="Auto Save"
+        android:textSize="18sp"
+        android:checked="false"/>
+<com.google.android.material.radiobutton.MaterialRadioButton
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="480dp"
+    android:text="@string/Music"
+   />
+    <com.google.android.material.radiobutton.MaterialRadioButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="520dp"
+        android:text="@string/Podcasts"/>
+
 </androidx.coordinatorlayout.widget.CoordinatorLayout>
